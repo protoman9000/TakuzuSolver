@@ -23,6 +23,12 @@ namespace TakuzuSolver
             int tmp2Num = Convert.ToInt16(tmp2);
             
             string[,] newGrid = new string[tmp2Num, tmpNum];
+            
+            //Random generator for the red and blue
+            int randGen = ((tmp2Num * tmpNum) / 2);
+            Random rnd = new Random();
+            int blue = rnd.Next(randGen);
+            int red = rnd.Next(randGen);
         }
     }
 }
