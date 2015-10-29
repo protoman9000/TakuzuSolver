@@ -13,6 +13,7 @@ namespace TakuzuSolver
             Console.WriteLine("Starting Takuza Solver");
             Console.ReadKey();
             
+            //Letting the user selecte what kind of size for the grid
             Console.WriteLine("Enter the height:");
             string tmp = Console.ReadLine();
             int tmpNum = Convert.ToInt16(tmp);
