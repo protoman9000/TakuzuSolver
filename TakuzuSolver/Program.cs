@@ -27,8 +27,24 @@ namespace TakuzuSolver
             //Random generator for the red and blue
             int randGen = ((tmp2Num * tmpNum) / 2);
             Random rnd = new Random();
-            int blue = rnd.Next(randGen);
-            int red = rnd.Next(randGen);
+            int placement = rnd.Next(randGen);
+
+            //filling out the grid. 
+            for (int i = 0; i < placement; i++)
+            {
+                for (int j = 0; j < placement; j++)
+                {
+                    if (i > 3 && j < 3)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        newGrid[j, i] = "Red";
+                        newGrid[i, j] = "Blue";
+                    }
+                }
+            }
         }
     }
 }
